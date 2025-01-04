@@ -11,7 +11,7 @@ import {
   responsiveScreenHeight,
   responsiveScreenWidth,
 } from 'react-native-responsive-dimensions';
-
+import FeatherIcons from 'react-native-vector-icons/Feather';
 type ApiResponse<BEData> = {
   data: BEData;
   status: 'INITIAL' | 'SUCCCESS' | 'FAIL' | 'LOADING';
@@ -136,6 +136,7 @@ const SampleFlatlist = () => {
                   <Text>dn: {`${item.width} X ${item.height}`}</Text>
                 </View>
                 <View>
+                  <FeatherIcons name="download" size={25} />
                   <Text style={{fontWeight: '700'}}>Download</Text>
                 </View>
               </View>
